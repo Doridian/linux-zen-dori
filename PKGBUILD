@@ -233,6 +233,12 @@ _package-docs() {
   ln -sr "$builddir/Documentation" "$pkgdir/usr/share/doc/$pkgbase"
 }
 
+pkgbase=linux-zen-dori
+pkgdesc='Linux ZEN Dori'
+source+=('min_input_signal_0.patch')
+sha256sums+=('SKIP')
+b2sums+=('SKIP')
+
 pkgname=(
   "$pkgbase"
   "$pkgbase-headers"
