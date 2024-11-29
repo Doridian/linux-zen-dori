@@ -1,0 +1,12 @@
+diff --color -ura linux-6.12.1/drivers/gpu/drm/amd/display/amdgpu_dm/amdgpu_dm.c linux-6.12.1-patched/drivers/gpu/drm/amd/display/amdgpu_dm/amdgpu_dm.c
+--- linux-6.12.1/drivers/gpu/drm/amd/display/amdgpu_dm/amdgpu_dm.c	2024-11-22 06:30:26.000000000 -0800
++++ linux-6.12.1-patched/drivers/gpu/drm/amd/display/amdgpu_dm/amdgpu_dm.c	2024-11-29 14:51:26.366940146 -0800
+@@ -3450,6 +3450,8 @@
+ 		caps->aux_min_input_signal = 0;
+ 		caps->aux_max_input_signal = 512;
+ 	}
++
++	caps->min_input_signal = 0;
+ }
+ 
+ void amdgpu_dm_update_connector_after_detect(
