@@ -1,7 +1,7 @@
 # Maintainer: Jan Alexander Steffens (heftig) <heftig@archlinux.org>
 
 pkgbase=linux-zen-dori
-pkgver=6.12.1.zen1
+pkgver=6.12.3.zen1
 pkgrel=1
 pkgdesc='Linux ZEN Dori'
 url='https://github.com/zen-kernel/zen-kernel'
@@ -43,17 +43,17 @@ validpgpkeys=(
   83BC8889351B5DEBBB68416EB8AC08600F108CDF  # Jan Alexander Steffens (heftig)
 )
 # https://www.kernel.org/pub/linux/kernel/v6.x/sha256sums.asc
-sha256sums=('0193b1d86dd372ec891bae799f6da20deef16fc199f30080a4ea9de8cef0c619'
+sha256sums=('c89809cc777d50f1ea484a118630281a26383707a0e752c96fd834f6e765deae'
             'SKIP'
-            '6cbacdf83d38d4897efb459a4d4860f88ae4434b508a11e1a2f61037daa11ab9'
+            '7943901f189a620611b318339d0d4360badfcc382c1a29684a580791dcd0202e'
             'SKIP'
-            'e4cac3a07f80e7e0212aceb3d5d74670cbada7aa116fc7142f06b4e43ca4dc8c'
+            'cfa9c0d9fdf1cfed28856fb725178203571fc0d89401dfa5f3abccc334597372'
             'SKIP')
-b2sums=('de3f4dec2fc7e36711c68683d6564d0c3ce6fe728ffa6a629604e2fa9e489dbab45fd6676343f6e68bafbd202a3e814e82a1448b46844e34046b9f82f819b8f4'
+b2sums=('1caaf9aed83a69a0c8b17ca923a97848cbb3b042d023aaaa7462c24f66f0d1b8a4fa42e2f3b9248ab8c57000a0e68d185072b0c88be7bcd93175f3e88ac76955'
         'SKIP'
-        '0869ecc6898aa63cb8c7db00e1c2a55e2ec6b2219d557c389d5556f459d127b9433661a8b778d52a53166deabea9ec8f1915224820ba197e8ca63e0336b15eeb'
+        '881bb38a43feaf4f5ae4a69a1dd75f40d35b84fc9a75bee18944cb6ef8bf904bb2deb4e31f680eb2ff2bebfb4a78dad1f3caaf2c6f763ea68893c9866e0564c4'
         'SKIP'
-        'ad5d73857724909ee927ac0505e2fdd22e847c6901bd1222157a4902d80fb0b6db8ae8467f884588bbe930c704f968c8b9e218930979327c469b7e507e4f43fc'
+        'a86606be8278a514e962bca2b8b20d88cc66af0ebd618d2ccbb227f388fc752ac5c3051da6793593efbc652189d61d393abe7f0e21295550d54a295fc0cafadf'
         'SKIP')
 
 export KBUILD_BUILD_HOST=archlinux
