@@ -2,7 +2,7 @@
 
 pkgbase=linux-zen
 pkgver=6.12.3.zen1
-pkgrel=1
+pkgrel=2
 pkgdesc='Linux ZEN'
 url='https://github.com/zen-kernel/zen-kernel'
 arch=(x86_64)
@@ -235,9 +235,18 @@ _package-docs() {
 
 pkgbase=linux-zen-dori
 pkgdesc='Linux ZEN Dori'
-source+=('min_input_signal_0.patch')
-sha256sums+=('SKIP')
-b2sums+=('SKIP')
+source+=(
+  'min_input_signal_0.patch'
+  'qcnm_btusb_ids.patch'
+)
+sha256sums+=(
+  'SKIP'
+  'SKIP'
+)
+b2sums+=(
+  'SKIP'
+  'SKIP'
+)
 
 pkgname=(
   "$pkgbase"

@@ -1,0 +1,12 @@
+diff --color -ura linux-6.12.3/drivers/bluetooth/btusb.c linux-6.12.3-patched/drivers/bluetooth/btusb.c
+--- linux-6.12.3/drivers/bluetooth/btusb.c	2024-12-05 22:20:46.000000000 -0800
++++ linux-6.12.3-patched/drivers/bluetooth/btusb.c	2024-12-10 20:19:26.400528414 -0800
+@@ -371,6 +371,8 @@
+ 	/* QCA WCN785x chipset */
+ 	{ USB_DEVICE(0x0cf3, 0xe700), .driver_info = BTUSB_QCA_WCN6855 |
+ 						     BTUSB_WIDEBAND_SPEECH },
++	{ USB_DEVICE(0x2c7c, 0x0130), .driver_info = BTUSB_QCA_WCN6855 |
++						     BTUSB_WIDEBAND_SPEECH },
+ 
+ 	/* Broadcom BCM2035 */
+ 	{ USB_DEVICE(0x0a5c, 0x2009), .driver_info = BTUSB_BCM92035 },
