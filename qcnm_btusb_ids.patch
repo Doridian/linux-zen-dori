@@ -1,7 +1,7 @@
-diff --color -ura linux-6.12.3/drivers/bluetooth/btusb.c linux-6.12.3-patched/drivers/bluetooth/btusb.c
---- linux-6.12.3/drivers/bluetooth/btusb.c	2024-12-05 22:20:46.000000000 -0800
-+++ linux-6.12.3-patched/drivers/bluetooth/btusb.c	2024-12-10 20:19:26.400528414 -0800
-@@ -371,6 +371,8 @@
+diff --color -rupN linux-6.12.8/drivers/bluetooth/btusb.c linux-6.12.8-patched/drivers/bluetooth/btusb.c
+--- linux-6.12.8/drivers/bluetooth/btusb.c	2025-01-02 01:34:26.000000000 -0800
++++ linux-6.12.8-patched/drivers/bluetooth/btusb.c	2025-01-06 21:29:50.617708760 -0800
+@@ -371,6 +371,8 @@ static const struct usb_device_id quirks
  	/* QCA WCN785x chipset */
  	{ USB_DEVICE(0x0cf3, 0xe700), .driver_info = BTUSB_QCA_WCN6855 |
  						     BTUSB_WIDEBAND_SPEECH },
