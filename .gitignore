@@ -1,0 +1,6 @@
+*.tar.sign
+*.tar.xz
+linux-*.patch*
+/src
+/pkg
+
