@@ -1,0 +1,18 @@
+diff --color -rupN linux-6.13.3/drivers/gpu/drm/drm_panel_backlight_quirks.c linux-6.13.3-patched/drivers/gpu/drm/drm_panel_backlight_quirks.c
+--- linux-6.13.3/drivers/gpu/drm/drm_panel_backlight_quirks.c	2025-02-17 02:36:59.000000000 -0800
++++ linux-6.13.3-patched/drivers/gpu/drm/drm_panel_backlight_quirks.c	2025-02-20 19:41:57.780625756 -0800
+@@ -41,6 +41,14 @@ static const struct drm_panel_min_backli
+ 		.ident.name = "NE135A1M-NY1",
+ 		.min_brightness = 0,
+ 	},
++	/* 16 inch panel */
++	{
++		.dmi_match.field = DMI_BOARD_VENDOR,
++		.dmi_match.value = "Framework",
++		.ident.panel_id = drm_edid_encode_panel_id('B', 'O', 'E', 0x0cb4),
++		.ident.name = "NE160QDM-NZ6",
++		.min_brightness = 0,
++	},
+ };
+ 
+ static bool drm_panel_min_backlight_quirk_matches(const struct drm_panel_min_backlight_quirk *quirk,

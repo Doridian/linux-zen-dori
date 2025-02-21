@@ -236,7 +236,7 @@ _package-docs() {
 pkgbase=linux-zen-dori
 pkgdesc='Linux ZEN Dori'
 source+=(
-  'min_input_signal_0.patch'
+  'framework16_backlight_quirk.patch'
   'qcnm_btusb_ids.patch'
 )
 sha256sums+=(
