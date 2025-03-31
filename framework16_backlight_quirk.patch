@@ -9,7 +9,7 @@ diff --color -rupN linux-6.13.3/drivers/gpu/drm/drm_panel_backlight_quirks.c lin
 +	{
 +		.dmi_match.field = DMI_BOARD_VENDOR,
 +		.dmi_match.value = "Framework",
-+		.ident.panel_id = drm_edid_encode_panel_id('B', 'O', 'E', 0x0cb4),
++		.ident.panel_id = drm_edid_encode_panel_id('B', 'O', 'E', 0x0bc9),
 +		.ident.name = "NE160QDM-NZ6",
 +		.min_brightness = 0,
 +	},
