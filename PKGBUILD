@@ -2,7 +2,7 @@
 
 pkgbase=linux-zen
 pkgver=6.14.2.zen1
-pkgrel=1
+pkgrel=2
 pkgdesc='Linux ZEN'
 url='https://github.com/zen-kernel/zen-kernel'
 arch=(x86_64)
@@ -249,11 +249,14 @@ pkgbase=linux-zen-dori
 pkgdesc='Linux ZEN Dori'
 source+=(
   'framework16_backlight_quirk.patch'
+  'amd_sleep_fix_2.patch'
 )
 sha256sums+=(
   'SKIP'
+  'SKIP'
 )
 b2sums+=(
+  'SKIP'
   'SKIP'
 )
 
