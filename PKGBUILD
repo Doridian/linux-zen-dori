@@ -249,14 +249,11 @@ pkgbase=linux-zen-dori
 pkgdesc='Linux ZEN Dori'
 source+=(
   'framework16_backlight_quirk.patch'
-  'amd_sleep_fix_2.patch'
 )
 sha256sums+=(
   'SKIP'
-  'SKIP'
 )
 b2sums+=(
-  'SKIP'
   'SKIP'
 )
 
