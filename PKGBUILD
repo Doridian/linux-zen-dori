@@ -2,7 +2,7 @@
 
 pkgbase=linux-zen
 pkgver=6.14.4.zen1
-pkgrel=1
+pkgrel=2
 pkgdesc='Linux ZEN'
 url='https://github.com/zen-kernel/zen-kernel'
 arch=(x86_64)
