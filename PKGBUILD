@@ -2,7 +2,7 @@
 
 pkgbase=linux-zen
 pkgver=6.14.4.zen1
-pkgrel=2
+pkgrel=3
 pkgdesc='Linux ZEN'
 url='https://github.com/zen-kernel/zen-kernel'
 arch=(x86_64)
@@ -249,11 +249,14 @@ pkgbase=linux-zen-dori
 pkgdesc='Linux ZEN Dori'
 source+=(
   'framework16_backlight_quirk.patch'
+  'gpd_pocket2_rotation_bios.patch'
 )
 sha256sums+=(
   'SKIP'
+  'SKIP'
 )
 b2sums+=(
+  'SKIP'
   'SKIP'
 )
 
